@@ -1,0 +1,21 @@
+{
+  "name": "lumina-eros-shop",
+  "version": "1.0.0",
+  "description": "Luxus Lingerie Webshop mit Express Backend",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "lingerie",
+    "webshop",
+    "luxus"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}

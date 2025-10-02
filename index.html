@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Éros – Luxus Lingerie Boutique</title>
+  <meta name="description" content="Lumina Éros ist die exklusive Adresse für luxuriöse Lingerie und sinnliche Accessoires. Entdecke High-End Dessous mit erotischem Touch und erlebe Shopping neu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <span>Kostenloser Expressversand ab 200€ • Diskrete Verpackung garantiert</span>
+  </div>
+  <header class="site-header">
+    <div class="logo">Lumina <span>Éros</span></div>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="#kollektion">Kollektion</a>
+      <a href="#erlebnisse">Erlebnisse</a>
+      <a href="#about">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-toggle" aria-label="Produktsuche öffnen">
+        <span class="material-symbol">search</span>
+      </button>
+      <button class="cart-toggle" aria-label="Warenkorb öffnen">
+        <span class="material-symbol">shopping_bag</span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Neue Saison • Limitierte Edition</p>
+        <h1>Sinnlichkeit trifft auf High Couture</h1>
+        <p class="lead">Erlebe eine kuratierte Auswahl aus feinster Seide, französischer Spitze und handveredelten Details. Für besondere Nächte und unvergessliche Momente.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#kollektion">Kollektion entdecken</a>
+          <a class="btn ghost" href="#atelier">Private Beratung</a>
+        </div>
+      </div>
+      <div class="hero-visual" role="presentation" aria-hidden="true">
+        <div class="glass-card">
+          <h3>Signature Sets</h3>
+          <p>Persönlich für dich kuratiert von unserem Styling-Team.</p>
+          <button class="btn secondary" data-featured="true">Jetzt ansehen</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="erlebnisse">
+      <article>
+        <h3>Concierge Service</h3>
+        <p>Unser diskreter Concierge begleitet dich durch den gesamten Kaufprozess – von der Größenberatung bis zur exklusiven Geschenkverpackung.</p>
+      </article>
+      <article>
+        <h3>Private Fittings</h3>
+        <p>Buche ein maßgeschneidertes Fitting in unseren privaten Lounges oder virtuell mit unseren Lingerie-Experten.</p>
+      </article>
+      <article>
+        <h3>Sinnliche Signature-Düfte</h3>
+        <p>Entdecke unsere hauseigene Duftkollektion, die jedes Set mit einem Hauch von Verführung vollendet.</p>
+      </article>
+    </section>
+
+    <section class="collection" id="kollektion">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Kollektion</p>
+          <h2>Lumina Éros Curated</h2>
+        </div>
+        <div class="filters" aria-label="Filter">
+          <label>
+            <span>Kategorie</span>
+            <select id="categoryFilter">
+              <option value="all">Alle</option>
+            </select>
+          </label>
+          <label>
+            <span>Farbe</span>
+            <select id="colorFilter">
+              <option value="all">Alle</option>
+            </select>
+          </label>
+          <label class="search-field">
+            <span class="material-symbol">search</span>
+            <input type="search" id="searchInput" placeholder="Suche nach Modell, Stoff oder Stimmung" aria-label="Produktsuche">
+          </label>
+        </div>
+      </div>
+      <div class="collection-status" role="status" aria-live="polite"></div>
+      <div class="product-grid" role="list" aria-live="polite">
+        <!-- Produkte werden dynamisch geladen -->
+      </div>
+    </section>
+
+    <section class="experience" id="atelier">
+      <div class="experience-content">
+        <p class="eyebrow">Atelier Éros</p>
+        <h2>Dein privates Lingerie-Erlebnis</h2>
+        <p>Unsere Atelier-Suiten in Berlin, Zürich und Wien bieten luxuriöse Rückzugsorte für sinnliche Anprobe-Momente. Genieße Champagner, Duftkerzen und die Expertise unseres Styling-Teams.</p>
+        <ul>
+          <li>Individuelle Passform-Analyse &amp; Größenprofil</li>
+          <li>Kuratiertes Set aus Dessous, Accessoires und Duft</li>
+          <li>Vertrauliche Lieferungen weltweit</li>
+        </ul>
+        <a class="btn primary" href="#kontakt">Termin anfragen</a>
+      </div>
+      <div class="experience-gallery" aria-hidden="true">
+        <div class="gallery-card">
+          <span>Silk Reverie</span>
+        </div>
+        <div class="gallery-card">
+          <span>Noir Obsession</span>
+        </div>
+        <div class="gallery-card">
+          <span>Rosé Nuit</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-label="Kundenstimmen">
+      <article>
+        <p>„Noch nie habe ich mich in Lingerie so königlich gefühlt. Der Concierge-Service ist unvergleichlich.“</p>
+        <span>— Isabella R.</span>
+      </article>
+      <article>
+        <p>„Die Passform-Beratung war präzise und diskret. Meine Bestellung kam in einer kunstvollen Box.“</p>
+        <span>— Helena M.</span>
+      </article>
+      <article>
+        <p>„Ein Fest für die Sinne. Von der Seide bis zum Duft – jedes Detail erzählt eine Geschichte.“</p>
+        <span>— Valentina L.</span>
+      </article>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <p class="eyebrow">Private Society</p>
+        <h2>Exklusive Einladungen &amp; limitierte Drops</h2>
+        <p>Melde dich für die Lumina Éros Private Society an und erhalte Vorabzugang zu geheimen Kollektionen, Einladungen zu Lounge-Events und luxuriöse Überraschungen.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <label class="sr-only" for="newsletterEmail">E-Mail</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="E-Mail-Adresse" required>
+        <button class="btn secondary" type="submit">Beitreten</button>
+        <p class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-story">
+        <p class="eyebrow">Über Lumina Éros</p>
+        <h2>Lingerie für die Nacht – handverlesen in Europa</h2>
+        <p>Lumina Éros vereint Haute-Couture Handwerk mit moderner Sinnlichkeit. Unsere Stücke werden in limitierter Stückzahl von europäischen Manufakturen gefertigt und mit feinsten Stoffen vollendet.</p>
+        <p>Von zartem Chiffon über französische Spitze bis zu vergoldeten Details – jedes Design ist ein Versprechen an Selbstliebe und verführerische Momente.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight">
+          <h3>Nachhaltig &amp; bewusst</h3>
+          <p>Wir verwenden recycelte Seidenfasern und zertifizierte Lieferketten für ethische Eleganz.</p>
+        </div>
+        <div class="highlight">
+          <h3>Made-to-Measure</h3>
+          <p>Personalisierte Größenprofile sorgen für perfekte Passform vom ersten Moment an.</p>
+        </div>
+        <div class="highlight">
+          <h3>Duftinszenierung</h3>
+          <p>Jedes Set wird mit einem exklusiven Duftöl geliefert, kreiert in Grasse, Frankreich.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="contact-info">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Wir sind für dich da</h2>
+        <p>Unser Concierge-Team beantwortet Fragen zu Größen, Lieferungen oder individuellen Wünschen innerhalb von 24 Stunden.</p>
+        <ul>
+          <li><strong>Telefon:</strong> +49 30 1234 5678</li>
+          <li><strong>E-Mail:</strong> concierge@lumina-eros.com</li>
+          <li><strong>Showrooms:</strong> Berlin • Zürich • Wien</li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="contactName">Name</label>
+        <input type="text" id="contactName" name="name" required>
+
+        <label for="contactEmail">E-Mail</label>
+        <input type="email" id="contactEmail" name="email" required>
+
+        <label for="contactTopic">Anliegen</label>
+        <select id="contactTopic" name="topic">
+          <option value="beratung">Beratung</option>
+          <option value="bestellung">Bestellung</option>
+          <option value="termin">Private Lounge Termin</option>
+        </select>
+
+        <label for="contactMessage">Nachricht</label>
+        <textarea id="contactMessage" name="message" rows="4" required></textarea>
+
+        <button class="btn primary" type="submit">Nachricht senden</button>
+        <p class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Lumina Éros</h3>
+      <p>Luxus-Lingerie und sinnliche Accessoires für besondere Momente.</p>
+    </div>
+    <div>
+      <h4>Kollektionen</h4>
+      <ul>
+        <li><a href="#kollektion">Signature Silk</a></li>
+        <li><a href="#kollektion">Noir Désir</a></li>
+        <li><a href="#kollektion">Velvet Midnight</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Service</h4>
+      <ul>
+        <li><a href="#atelier">Private Fittings</a></li>
+        <li><a href="#kontakt">Concierge</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">AGB</a></li>
+        <li><a href="#">Impressum</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="cart-drawer" aria-hidden="true" aria-labelledby="cartTitle" role="dialog">
+    <div class="cart-header">
+      <h2 id="cartTitle">Dein Warenkorb</h2>
+      <button class="cart-close" aria-label="Warenkorb schließen">&times;</button>
+    </div>
+    <div class="cart-body">
+      <ul class="cart-items"></ul>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Zwischensumme</span>
+        <span class="cart-total">0,00 €</span>
+      </div>
+      <a class="btn primary" href="checkout.html">Zur Kasse</a>
+    </div>
+  </div>
+
+  <div class="modal" role="dialog" aria-hidden="true" aria-labelledby="productModalTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fenster schließen">&times;</button>
+      <div class="modal-gallery">
+        <img src="" alt="" id="modalImage">
+      </div>
+      <div class="modal-details">
+        <p class="eyebrow" id="modalTag"></p>
+        <h2 id="productModalTitle"></h2>
+        <p class="modal-description"></p>
+        <div class="modal-meta">
+          <span class="modal-price"></span>
+          <span class="modal-color"></span>
+        </div>
+        <button class="btn secondary modal-add">Zum Warenkorb hinzufügen</button>
+      </div>
+    </div>
+  </div>
+
+  <template id="productCardTemplate">
+    <article class="product-card" role="listitem">
+      <div class="product-media">
+        <img src="" alt="">
+        <button class="quickview" type="button">Details</button>
+      </div>
+      <div class="product-info">
+        <div class="product-meta">
+          <span class="product-tag"></span>
+          <span class="product-color"></span>
+        </div>
+        <h3 class="product-title"></h3>
+        <p class="product-description"></p>
+        <div class="product-bottom">
+          <span class="product-price"></span>
+          <button class="btn tertiary add-to-cart">In den Warenkorb</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="scripts/app.js" type="module"></script>
+</body>
+</html>
