@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout – Lumina Éros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+</head>
+<body class="checkout-body">
+  <header class="checkout-header">
+    <a href="index.html" class="logo">Lumina <span>Éros</span></a>
+    <p>Diskreter Luxus von der Auswahl bis zur Lieferung.</p>
+  </header>
+
+  <main class="checkout-grid">
+    <section class="checkout-section">
+      <h1>Checkout</h1>
+      <form id="checkoutForm" class="checkout-form">
+        <fieldset>
+          <legend>Kontakt</legend>
+          <label for="email">E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Lieferadresse</legend>
+          <div class="field-grid">
+            <label for="firstName">Vorname
+              <input type="text" id="firstName" name="firstName" required>
+            </label>
+            <label for="lastName">Nachname
+              <input type="text" id="lastName" name="lastName" required>
+            </label>
+          </div>
+          <label for="address">Adresse
+            <input type="text" id="address" name="address" required>
+          </label>
+          <div class="field-grid">
+            <label for="postal">PLZ
+              <input type="text" id="postal" name="postal" required>
+            </label>
+            <label for="city">Stadt
+              <input type="text" id="city" name="city" required>
+            </label>
+          </div>
+          <label for="country">Land
+            <select id="country" name="country">
+              <option value="de">Deutschland</option>
+              <option value="at">Österreich</option>
+              <option value="ch">Schweiz</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Zahlung</legend>
+          <div class="payment-options">
+            <label>
+              <input type="radio" name="payment" value="card" checked>
+              <span>Kreditkarte</span>
+            </label>
+            <label>
+              <input type="radio" name="payment" value="apple">
+              <span>Apple Pay</span>
+            </label>
+            <label>
+              <input type="radio" name="payment" value="invoice">
+              <span>Rechnung (Stammkunden)</span>
+            </label>
+          </div>
+          <div class="card-grid">
+            <label for="cardNumber">Kartennummer
+              <input type="text" id="cardNumber" name="cardNumber" maxlength="19" placeholder="1234 5678 9012 3456" required>
+            </label>
+            <label for="cardName">Karteninhaber*in
+              <input type="text" id="cardName" name="cardName" required>
+            </label>
+            <label for="cardExpiry">Gültig bis
+              <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/JJ" required>
+            </label>
+            <label for="cardCvc">CVC
+              <input type="text" id="cardCvc" name="cardCvc" maxlength="4" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Versand</legend>
+          <label class="shipping-option">
+            <input type="radio" name="shipping" value="express" checked>
+            <div>
+              <span>Express (1-2 Tage)</span>
+              <small>Kostenlos ab 200 € • Diskrete Verpackung</small>
+            </div>
+            <strong>19,00 €</strong>
+          </label>
+          <label class="shipping-option">
+            <input type="radio" name="shipping" value="standard">
+            <div>
+              <span>Standard (3-5 Tage)</span>
+              <small>Versichert &amp; nachverfolgbar</small>
+            </div>
+            <strong>9,50 €</strong>
+          </label>
+        </fieldset>
+
+        <button class="btn primary" type="submit">Bestellung abschließen</button>
+        <p class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <aside class="checkout-summary">
+      <h2>Bestellübersicht</h2>
+      <ul class="summary-items"></ul>
+      <div class="summary-totals">
+        <div><span>Zwischensumme</span><strong class="subtotal">0,00 €</strong></div>
+        <div><span>Versand</span><strong class="shipping">19,00 €</strong></div>
+        <div class="summary-total"><span>Gesamtsumme</span><strong class="grand-total">0,00 €</strong></div>
+      </div>
+      <div class="summary-perks">
+        <p><strong>Luxus-Vorteile</strong></p>
+        <ul>
+          <li>Handgeschriebene Karte inklusive</li>
+          <li>Privater Concierge nach dem Kauf</li>
+          <li>Exklusive Duftprobe „Rose Noir“</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="checkout-footer">
+    <small>&copy; <span id="year"></span> Lumina Éros. Alle Rechte vorbehalten.</small>
+    <nav>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+      <a href="#">Impressum</a>
+    </nav>
+  </footer>
+
+  <script src="scripts/checkout.js" type="module"></script>
+</body>
+</html>

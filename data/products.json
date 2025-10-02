@@ -1,0 +1,68 @@
+[
+  {
+    "id": "silk-reverie",
+    "name": "Silk Reverie Ensemble",
+    "price": 329,
+    "category": "Lingerie Sets",
+    "color": "Champagner",
+    "tag": "Limited",
+    "description": "Triumphierende Kombination aus Seidencorsage, Brazilian Slip und Halterneck-BH mit vergoldeten Akzenten.",
+    "notes": "Handgefärbte Seide • Größen XS-XL • Personalisierbare Gravur",
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "noir-obsession",
+    "name": "Noir Obsession Bodysuit",
+    "price": 289,
+    "category": "Bodysuits",
+    "color": "Noir",
+    "tag": "Signature",
+    "description": "Skulpturaler Body mit Illusionstüll und französischer Chantilly-Spitze. Perfekt für Abendgarderobe.",
+    "notes": "Formende Silhouette • Geheime Corsage-Bänder • Handwäsche empfohlen",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "rose-nuit",
+    "name": "Rosé Nuit Kimono",
+    "price": 259,
+    "category": "Loungewear",
+    "color": "Rosé",
+    "tag": "Iconic",
+    "description": "Bodenlanger Kimono aus fließendem Chiffon mit handbestickten floralen Ornamenten und Samtgürtel.",
+    "notes": "Limitierte Edition • Inklusive Duftöl „Nuit Velours“",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "velvet-midnight",
+    "name": "Velvet Midnight Corsage",
+    "price": 349,
+    "category": "Corsagen",
+    "color": "Bordeaux",
+    "tag": "Atelier",
+    "description": "Strukturierte Corsage mit halbtransparenten Paneelen und Swarovski-Kristallen für dramatische Abende.",
+    "notes": "Atelieranfertigung • Lieferzeit 10 Tage",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "luna-serenade",
+    "name": "Luna Serenade Bralette",
+    "price": 189,
+    "category": "Bralettes",
+    "color": "Ivory",
+    "tag": "Essential",
+    "description": "Zarter Bralette aus italienischer Spitze mit weichem Mesh-Rücken und perlmuttfarbenen Details.",
+    "notes": "Passendes Slip-Set erhältlich",
+    "image": "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "nocturne-gown",
+    "name": "Nocturne Silk Gown",
+    "price": 499,
+    "category": "Nightwear",
+    "color": "Schwarz",
+    "tag": "Haute Couture",
+    "description": "Bodenlanges Seidenkleid mit tiefem Rückenausschnitt, handgefertigten Spitzeinsätzen und Seidenschleppe.",
+    "notes": "Limited Run • Lieferung in Geschenkbox",
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80"
+  }
+]
